@@ -2,20 +2,23 @@
   "name": "catalogo-granja-blue",
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://floresmauro.github.io/catalogo-granja-blue/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.14",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.4.1",
-    "vite": "^4.4.9",
-    "@vitejs/plugin-react": "^4.0.3"
+    "vite": "^4.4.9"
   }
 }
