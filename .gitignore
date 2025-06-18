@@ -1,0 +1,15 @@
+# Dependencias
+node_modules/
+
+# Distribución compilada
+dist/
+
+# Cachés
+.cache/
+.vite/
+
+# Logs y otros
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
