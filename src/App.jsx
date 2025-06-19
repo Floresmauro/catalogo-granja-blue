@@ -2,10 +2,15 @@ import { useState } from "react";
 import ProductCard from "./components/ProductCard";
 import Carrito from "./components/Carrito";
 
+// ✅ Imágenes importadas desde src/assets
+import milanesaImg from "./assets/milanesa.jpeg";
+import huevosImg from "./assets/Huevos.png";
+import polloImg from "./assets/pollo.jpg";
+
 const productos = [
-  { id: 1, nombre: "Milanesa de Pollo", precio: 9500, imagen: "/img/milanesa.jpeg", categoria: "Milanesas" },
-  { id: 2, nombre: "Huevos Extra", precio: 7500, imagen: "/img/Huevos.png", categoria: "Huevos" },
-  { id: 3, nombre: "Pollo Entero", precio: 4900, imagen: "/img/pollo.jpg", categoria: "Pollo" }
+  { id: 1, nombre: "Milanesa de Pollo", precio: 9500, imagen: milanesaImg, categoria: "Milanesas" },
+  { id: 2, nombre: "Huevos Extra", precio: 7500, imagen: huevosImg, categoria: "Huevos" },
+  { id: 3, nombre: "Pollo Entero", precio: 4900, imagen: polloImg, categoria: "Pollo" }
 ];
 
 export default function App() {
@@ -66,7 +71,7 @@ export default function App() {
         </div>
       </main>
 
-            <a
+      <a
         href="https://wa.me/5491158828724?text=Hola!%20Estoy%20interesado%20en%20hacer%20un%20pedido%20a%20Granja%20Ohana"
         className="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 z-50"
         target="_blank"
